@@ -5,16 +5,23 @@
 {% endblock %}
 
 {% block body %}
-    <h1>{{ title }}</h1>
+    <div class='container'>
+        <div class='row justify-content-center'>
+            <div class='col-xl-12'>
+                <h1>{{ title }}</h1>
 
-    <hr/>
+                <hr/>
 
-    <h2>Comments</h2>
-    <ul>
-        {% for comment in comments %}
-            <li>{{ comment }}</li>
-        {% endfor %}
-    </ul>
+                <h2>Comments</h2>
+                <ul>
+                    {% for comment in comments %}
+                        <li>{{ comment }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 
